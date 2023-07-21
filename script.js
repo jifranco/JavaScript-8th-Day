@@ -1,1 +1,12 @@
-const canvas = document.querySelector('#draw')
+const canvas = document.querySelector('#draw');
+
+const ctx = canvas.getContext('2D');
+
+canvas.width = width.innerWidth;
+canvas.height = window.innerHeight;
+
+ctx.strokeStyle = '#BADA55'
+ctx.lineJoin = 'round';
+ctx.lineCap = 'round';
+
+let isDrawing = false;
